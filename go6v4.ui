@@ -1,0 +1,4262 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>792</width>
+    <height>418</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QMainWindow {
+    background: qlineargradient(spread: pad, x1: 0, y1: 0, x2: 0, y2: 1, stop: 0.1 #4B0082, stop: 0.9 #000000);
+}
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QFrame" name="frameNA_NavBar">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>20</y>
+      <width>521</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QFrame {
+    background-color: #28004F; /* Use an even darker shade of purple */
+    border-radius: 10px;
+}</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QPushButton" name="pushButtonNAV_Home">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>10</y>
+       <width>41</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background:rgba(169, 169, 169, 0.2); /* Very transparent light grey background */
+    color: #FFFFFF; /* White text color */
+    border: none; /* No border */
+    border-radius: 6px;
+px; /* Rounded corners with a 10px radius */
+}
+
+QPushButton:hover {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:0, stop:0 #FF00FF, stop:1 #9f8bd7); /* Gradient from magenta to light purple, left to right */
+}
+</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>assets/home.svg</normaloff>assets/home.svg</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>24</width>
+       <height>24</height>
+      </size>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButtonNAV_Spammer">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>10</y>
+       <width>41</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background:rgba(169, 169, 169, 0.2); /* Very transparent light grey background */
+    color: #FFFFFF; /* White text color */
+    border: none; /* No border */
+    border-radius: 6px;
+px; /* Rounded corners with a 10px radius */
+}
+
+QPushButton:hover {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:0, stop:0 #FF00FF, stop:1 #9f8bd7); /* Gradient from magenta to light purple, left to right */
+}
+</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>assets/message-circle.svg</normaloff>assets/message-circle.svg</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>24</width>
+       <height>24</height>
+      </size>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButtonNAV_DmSpammer">
+     <property name="geometry">
+      <rect>
+       <x>170</x>
+       <y>10</y>
+       <width>41</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background:rgba(169, 169, 169, 0.2); /* Very transparent light grey background */
+    color: #FFFFFF; /* White text color */
+    border: none; /* No border */
+    border-radius: 6px;
+px; /* Rounded corners with a 10px radius */
+}
+
+QPushButton:hover {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:0, stop:0 #FF00FF, stop:1 #9f8bd7); /* Gradient from magenta to light purple, left to right */
+}
+</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>assets/send.svg</normaloff>assets/send.svg</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>24</width>
+       <height>24</height>
+      </size>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButtonNAV_Joiner">
+     <property name="geometry">
+      <rect>
+       <x>240</x>
+       <y>10</y>
+       <width>41</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background:rgba(169, 169, 169, 0.2); /* Very transparent light grey background */
+    color: #FFFFFF; /* White text color */
+    border: none; /* No border */
+    border-radius: 6px;
+px; /* Rounded corners with a 10px radius */
+}
+
+QPushButton:hover {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:0, stop:0 #FF00FF, stop:1 #9f8bd7); /* Gradient from magenta to light purple, left to right */
+}
+</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>assets/log-in.svg</normaloff>assets/log-in.svg</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>24</width>
+       <height>24</height>
+      </size>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButtonNAV_Settings">
+     <property name="geometry">
+      <rect>
+       <x>450</x>
+       <y>10</y>
+       <width>41</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background:rgba(169, 169, 169, 0.2); /* Very transparent light grey background */
+    color: #FFFFFF; /* White text color */
+    border: none; /* No border */
+    border-radius: 6px;
+px; /* Rounded corners with a 10px radius */
+}
+
+QPushButton:hover {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:0, stop:0 #FF00FF, stop:1 #9f8bd7); /* Gradient from magenta to light purple, left to right */
+}
+</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>assets/settings.svg</normaloff>assets/settings.svg</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>24</width>
+       <height>24</height>
+      </size>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButtonNAV_VoiceSpammer">
+     <property name="geometry">
+      <rect>
+       <x>310</x>
+       <y>10</y>
+       <width>41</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background:rgba(169, 169, 169, 0.2); /* Very transparent light grey background */
+    color: #FFFFFF; /* White text color */
+    border: none; /* No border */
+    border-radius: 6px;
+px; /* Rounded corners with a 10px radius */
+}
+
+QPushButton:hover {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:0, stop:0 #FF00FF, stop:1 #9f8bd7); /* Gradient from magenta to light purple, left to right */
+}
+</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>assets/volume-2.svg</normaloff>assets/volume-2.svg</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>24</width>
+       <height>24</height>
+      </size>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButtonNAV_HookSpammer">
+     <property name="geometry">
+      <rect>
+       <x>380</x>
+       <y>10</y>
+       <width>41</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background:rgba(169, 169, 169, 0.2); /* Very transparent light grey background */
+    color: #FFFFFF; /* White text color */
+    border: none; /* No border */
+    border-radius: 6px;
+px; /* Rounded corners with a 10px radius */
+}
+
+QPushButton:hover {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:0, stop:0 #FF00FF, stop:1 #9f8bd7); /* Gradient from magenta to light purple, left to right */
+}
+</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>assets/globe.svg</normaloff>assets/globe.svg</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>24</width>
+       <height>24</height>
+      </size>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QStackedWidget" name="stackedWidget">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>90</y>
+      <width>751</width>
+      <height>311</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="pageHome">
+     <widget class="QFrame" name="frameH_2">
+      <property name="geometry">
+       <rect>
+        <x>200</x>
+        <y>60</y>
+        <width>351</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QFrame {
+    background-color: #28004F; /* Use an even darker shade of purple */
+    border-radius: 10px;
+}</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <widget class="QSlider" name="horizontalSliderH_MaxTokens">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>30</y>
+         <width>301</width>
+         <height>22</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QSlider::groove:horizontal {
+    background: #FFFFFF; /* White line */
+    border: none; /* No border */
+    height: 8px; /* Adjust the height as needed */
+    border-radius: 4px; /* Rounded corners with a 4px radius */
+}
+
+QSlider::handle:horizontal {
+    background: rgba(169, 169, 169, 0.9); /* Slider marker color #8677C3 */
+    width: 20px; /* Adjust the width as needed */
+    border: none; /* No border */
+    border-radius: 4px; /* Rounded corners with a 4px radius */
+}</string>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+      <widget class="QLabel" name="labelH_MaxTokensCount">
+       <property name="geometry">
+        <rect>
+         <x>310</x>
+         <y>10</y>
+         <width>31</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Leelawadee UI Semilight</family>
+         <pointsize>8</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel {
+    background: none;
+    color: #FFF; /* Transparent font color */
+}</string>
+       </property>
+       <property name="text">
+        <string>0</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="labelH_MaxTokens">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>10</y>
+         <width>61</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Leelawadee UI Semilight</family>
+         <pointsize>8</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel {
+    background: none;
+    color: #FFF; /* Transparent font color */
+}</string>
+       </property>
+       <property name="text">
+        <string>max tokens:</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QFrame" name="frameH_4">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>40</y>
+        <width>161</width>
+        <height>111</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QFrame {
+    background-color: #28004F; /* Use an even darker shade of purple */
+    border-radius: 10px;
+}</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <widget class="QPushButton" name="pushButtonH_StartLoadTokens">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>20</y>
+         <width>121</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    background: rgba(169, 169, 169, 0.2); /* Slightly transparent background */
+    padding: 5px 10px;
+    color: #FFFFFF; /* White text color */
+    font-size: 12pt; /* Font size */
+}
+
+QPushButton:hover {
+    background: rgba(169, 169, 169, 0.3); /* Light purple background on hover */
+    color: #FFFFFF; /* White text color on hover */
+}
+</string>
+       </property>
+       <property name="text">
+        <string>Load Tokens</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButtonH_StartCheckTokens">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>60</y>
+         <width>121</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    background: rgba(169, 169, 169, 0.2); /* Slightly transparent background */
+    padding: 5px 10px;
+    color: #FFFFFF; /* White text color */
+    font-size: 12pt; /* Font size */
+}
+
+QPushButton:hover {
+    background: rgba(169, 169, 169, 0.3); /* Light purple background on hover */
+    color: #FFFFFF; /* White text color on hover */
+}
+</string>
+       </property>
+       <property name="text">
+        <string>Check Tokens</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QFrame" name="frameH_3">
+      <property name="geometry">
+       <rect>
+        <x>570</x>
+        <y>40</y>
+        <width>161</width>
+        <height>111</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QFrame {
+    background-color: #28004F; /* Use an even darker shade of purple */
+    border-radius: 10px;
+}</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <widget class="QPushButton" name="pushButtonH_StartLoadProxies">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>20</y>
+         <width>121</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    background: rgba(169, 169, 169, 0.2); /* Slightly transparent background */
+    padding: 5px 10px;
+    color: #FFFFFF; /* White text color */
+    font-size: 12pt; /* Font size */
+}
+
+QPushButton:hover {
+    background: rgba(169, 169, 169, 0.3); /* Light purple background on hover */
+    color: #FFFFFF; /* White text color on hover */
+}
+</string>
+       </property>
+       <property name="text">
+        <string>Load Proxies</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButtonH_StartCheckProxies">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>60</y>
+         <width>121</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    background: rgba(169, 169, 169, 0.2); /* Slightly transparent background */
+    padding: 5px 10px;
+    color: #FFFFFF; /* White text color */
+    font-size: 12pt; /* Font size */
+}
+
+QPushButton:hover {
+    background: rgba(169, 169, 169, 0.3); /* Light purple background on hover */
+    color: #FFFFFF; /* White text color on hover */
+}
+</string>
+       </property>
+       <property name="text">
+        <string>Check Proxies</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QLabel" name="labelH_Version">
+      <property name="geometry">
+       <rect>
+        <x>710</x>
+        <y>270</y>
+        <width>31</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Segoe UI Historic</family>
+        <pointsize>8</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+    background: none;
+    color: #FFF; /* Transparent font color */
+}</string>
+      </property>
+      <property name="text">
+       <string>4.0.0</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="labelH_ToolName_2">
+      <property name="geometry">
+       <rect>
+        <x>320</x>
+        <y>10</y>
+        <width>41</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>14</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+    background: none;
+    color: #FFF; /* Transparent font color */
+    border-radius: 10px; /* Adjust the radius as needed */
+}</string>
+      </property>
+      <property name="text">
+       <string>Go6</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="labelH_V4">
+      <property name="geometry">
+       <rect>
+        <x>360</x>
+        <y>10</y>
+        <width>41</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>16</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:0, stop:0 #FF00FF, stop:1 #9f8bd7);
+    color: #FFF; /* Transparent font color */
+    border-radius: 10px; /* Adjust the radius as needed */
+}</string>
+      </property>
+      <property name="text">
+       <string> V4</string>
+      </property>
+     </widget>
+     <widget class="QFrame" name="frameH">
+      <property name="geometry">
+       <rect>
+        <x>290</x>
+        <y>150</y>
+        <width>161</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QFrame {
+    background-color: #28004F; /* Use an even darker shade of purple */
+    border-radius: 10px;
+}</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <widget class="QLabel" name="labelH_Key">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>10</y>
+         <width>131</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Leelawadee UI Semilight</family>
+         <pointsize>9</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel {
+    background: none;
+    color: #FFF; /* Transparent font color */
+    border-radius: 10px; /* Adjust the radius as needed */
+}</string>
+       </property>
+       <property name="text">
+        <string>key: null</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="labelH_Expirey">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>30</y>
+         <width>131</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Leelawadee UI Semilight</family>
+         <pointsize>9</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel {
+    background: none;
+    color: #FFF; /* Transparent font color */
+    border-radius: 10px; /* Adjust the radius as needed */
+}</string>
+       </property>
+       <property name="text">
+        <string>expirey: null</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QFrame" name="frameH_5">
+      <property name="geometry">
+       <rect>
+        <x>110</x>
+        <y>170</y>
+        <width>161</width>
+        <height>91</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QFrame {
+    background-color: #28004F; /* Use an even darker shade of purple */
+    border-radius: 10px;
+}</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <widget class="QLabel" name="labelH_BuildNumber">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>10</y>
+         <width>131</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Leelawadee UI Semilight</family>
+         <pointsize>9</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel {
+    background: none;
+    color: #FFF; /* Transparent font color */
+    border-radius: 10px; /* Adjust the radius as needed */
+}</string>
+       </property>
+       <property name="text">
+        <string>build num: null</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="labelH_ClientVersion">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>30</y>
+         <width>131</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Leelawadee UI Semilight</family>
+         <pointsize>9</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel {
+    background: none;
+    color: #FFF; /* Transparent font color */
+    border-radius: 10px; /* Adjust the radius as needed */
+}</string>
+       </property>
+       <property name="text">
+        <string>client num: null</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="labelH_DarwinVersion">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>50</y>
+         <width>131</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Leelawadee UI Semilight</family>
+         <pointsize>9</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel {
+    background: none;
+    color: #FFF; /* Transparent font color */
+    border-radius: 10px; /* Adjust the radius as needed */
+}</string>
+       </property>
+       <property name="text">
+        <string>darwin num: null</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QFrame" name="frameH_6">
+      <property name="geometry">
+       <rect>
+        <x>470</x>
+        <y>170</y>
+        <width>161</width>
+        <height>91</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QFrame {
+    background-color: #28004F; /* Use an even darker shade of purple */
+    border-radius: 10px;
+}</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <widget class="QLabel" name="labelH_TokensCount">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>10</y>
+         <width>131</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Leelawadee UI Semilight</family>
+         <pointsize>9</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel {
+    background: none;
+    color: #FFF; /* Transparent font color */
+    border-radius: 10px; /* Adjust the radius as needed */
+}</string>
+       </property>
+       <property name="text">
+        <string>tokens count: 0</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="labelH_TokensValidCount">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>30</y>
+         <width>131</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Leelawadee UI Semilight</family>
+         <pointsize>9</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel {
+    background: none;
+    color: #FFF; /* Transparent font color */
+    border-radius: 10px; /* Adjust the radius as needed */
+}</string>
+       </property>
+       <property name="text">
+        <string>tokens valid: 0</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="labelH_TokensInValidCount">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>50</y>
+         <width>131</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Leelawadee UI Semilight</family>
+         <pointsize>9</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel {
+    background: none;
+    color: #FFF; /* Transparent font color */
+    border-radius: 10px; /* Adjust the radius as needed */
+}</string>
+       </property>
+       <property name="text">
+        <string>tokens dead: 0</string>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="pageGuildSpammer">
+     <widget class="QFrame" name="frameMS">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>60</y>
+        <width>431</width>
+        <height>151</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QFrame {
+    background-color: #28004F; /* Use an even darker shade of purple */
+    border-radius: 10px;
+}</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <widget class="QTextEdit" name="textEditGS_SpamMessage">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>10</y>
+         <width>411</width>
+         <height>131</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QTextEdit {
+    background: transparent; /* Transparent background */
+    border: 2px solid rgba(169, 169, 169, 0.9); /* Border color &quot;#8677C3&quot; */
+    border-radius: 4px; /* Rounded corners with a 10px radius */
+    color: white;
+}</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QFrame" name="frameMS_3">
+      <property name="geometry">
+       <rect>
+        <x>600</x>
+        <y>20</y>
+        <width>151</width>
+        <height>101</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QFrame {
+    background-color: #28004F; /* Use an even darker shade of purple */
+    border-radius: 10px;
+}</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <widget class="QPushButton" name="pushButtonGS_StartCreateForum">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>10</y>
+         <width>131</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    background: rgba(169, 169, 169, 0.2); /* Slightly transparent background */
+    padding: 5px 10px;
+    color: #FFFFFF; /* White text color */
+    font-size: 12pt; /* Font size */
+}
+
+QPushButton:hover {
+    background: rgba(169, 169, 169, 0.3); /* Light purple background on hover */
+    color: #FFFFFF; /* White text color on hover */
+}
+</string>
+       </property>
+       <property name="text">
+        <string>Create Forum</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEditGS_ForumName">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>50</y>
+         <width>131</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLineEdit {
+    border: none;            /* No border */
+    background: transparent; /* Transparent background */
+    color: #FFF;          /* White text color */
+    border-bottom: 1px solid rgba(169, 169, 169, 0.9); /* Underline effect */
+}
+</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QFrame" name="frameMS_2">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>10</y>
+        <width>151</width>
+        <height>101</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QFrame {
+    background-color: #28004F; /* Use an even darker shade of purple */
+    border-radius: 10px;
+}</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <widget class="QPushButton" name="pushButtonGS_StartCreateThreads">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>10</y>
+         <width>131</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    background: rgba(169, 169, 169, 0.2); /* Slightly transparent background */
+    padding: 5px 10px;
+    color: #FFFFFF; /* White text color */
+    font-size: 12pt; /* Font size */
+}
+
+QPushButton:hover {
+    background: rgba(169, 169, 169, 0.3); /* Light purple background on hover */
+    color: #FFFFFF; /* White text color on hover */
+}
+</string>
+       </property>
+       <property name="text">
+        <string>Create Threads</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEditGS_ThreadName">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>50</y>
+         <width>131</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLineEdit {
+    border: none;            /* No border */
+    background: transparent; /* Transparent background */
+    color: #FFF;          /* White text color */
+    border-bottom: 1px solid rgba(169, 169, 169, 0.9); /* Underline effect */
+}
+</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QFrame" name="frameMS_4">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>120</y>
+        <width>131</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QFrame {
+    background-color: #28004F; /* Use an even darker shade of purple */
+    border-radius: 10px;
+}</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <widget class="QPushButton" name="pushButtonGS_StartParseUsers">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>10</y>
+         <width>111</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    background: rgba(169, 169, 169, 0.2); /* Slightly transparent background */
+    padding: 5px 10px;
+    color: #FFFFFF; /* White text color */
+    font-size: 12pt; /* Font size */
+}
+
+QPushButton:hover {
+    background: rgba(169, 169, 169, 0.3); /* Light purple background on hover */
+    color: #FFFFFF; /* White text color on hover */
+}
+</string>
+       </property>
+       <property name="text">
+        <string>Parse Users</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="labelGS_ParsedCount">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>40</y>
+         <width>61</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Segoe UI Historic</family>
+         <pointsize>8</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel {
+    background: none;
+    color: #FFF; /* Transparent font color */
+}</string>
+       </property>
+       <property name="text">
+        <string>parsed: 0</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QFrame" name="frameMS_5">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>220</y>
+        <width>431</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QFrame {
+    background-color: #28004F; /* Use an even darker shade of purple */
+    border-radius: 10px;
+}</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <widget class="QCheckBox" name="checkBoxGS_MultiMsg">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>30</y>
+         <width>81</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QCheckBox {
+                background: transparent;
+                padding: 3px;
+				color: #FFF;
+            }
+            QCheckBox::indicator {
+                border: 2px solid  rgba(169, 169, 169, 0.9);
+                width: 15px;
+                height: 15px;
+                border-radius: 7px;
+            }
+            QCheckBox::indicator:checked {
+                background:  rgba(169, 169, 169, 0.9);
+            }</string>
+       </property>
+       <property name="text">
+        <string>MultiMsg</string>
+       </property>
+      </widget>
+      <widget class="QCheckBox" name="checkBoxGS_AntiLock">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>50</y>
+         <width>81</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QCheckBox {
+                background: transparent;
+                padding: 3px;
+				color: #FFF;
+            }
+            QCheckBox::indicator {
+                border: 2px solid  rgba(169, 169, 169, 0.9);
+                width: 15px;
+                height: 15px;
+                border-radius: 7px;
+            }
+            QCheckBox::indicator:checked {
+                background:  rgba(169, 169, 169, 0.9);
+            }</string>
+       </property>
+       <property name="text">
+        <string>AntiLock</string>
+       </property>
+      </widget>
+      <widget class="QCheckBox" name="checkBoxGS_SpaceLetters">
+       <property name="geometry">
+        <rect>
+         <x>100</x>
+         <y>30</y>
+         <width>101</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QCheckBox {
+                background: transparent;
+                padding: 3px;
+				color: #FFF;
+            }
+            QCheckBox::indicator {
+                border: 2px solid  rgba(169, 169, 169, 0.9);
+                width: 15px;
+                height: 15px;
+                border-radius: 7px;
+            }
+            QCheckBox::indicator:checked {
+                background:  rgba(169, 169, 169, 0.9);
+            }</string>
+       </property>
+       <property name="text">
+        <string>SpaceLetters</string>
+       </property>
+      </widget>
+      <widget class="QCheckBox" name="checkBoxGS_SpecialLetters">
+       <property name="geometry">
+        <rect>
+         <x>130</x>
+         <y>50</y>
+         <width>101</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QCheckBox {
+                background: transparent;
+                padding: 3px;
+				color: #FFF;
+            }
+            QCheckBox::indicator {
+                border: 2px solid  rgba(169, 169, 169, 0.9);
+                width: 15px;
+                height: 15px;
+                border-radius: 7px;
+            }
+            QCheckBox::indicator:checked {
+                background:  rgba(169, 169, 169, 0.9);
+            }</string>
+       </property>
+       <property name="text">
+        <string>SpecialLetters</string>
+       </property>
+      </widget>
+      <widget class="QCheckBox" name="checkBoxGS_EmojiSpam">
+       <property name="geometry">
+        <rect>
+         <x>210</x>
+         <y>30</y>
+         <width>81</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QCheckBox {
+                background: transparent;
+                padding: 3px;
+				color: #FFF;
+            }
+            QCheckBox::indicator {
+                border: 2px solid  rgba(169, 169, 169, 0.9);
+                width: 15px;
+                height: 15px;
+                border-radius: 7px;
+            }
+            QCheckBox::indicator:checked {
+                background:  rgba(169, 169, 169, 0.9);
+            }</string>
+       </property>
+       <property name="text">
+        <string>EmojiSPam</string>
+       </property>
+      </widget>
+      <widget class="QCheckBox" name="checkBoxGS_StickerSpam">
+       <property name="geometry">
+        <rect>
+         <x>240</x>
+         <y>50</y>
+         <width>91</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QCheckBox {
+                background: transparent;
+                padding: 3px;
+				color: #FFF;
+            }
+            QCheckBox::indicator {
+                border: 2px solid  rgba(169, 169, 169, 0.9);
+                width: 15px;
+                height: 15px;
+                border-radius: 7px;
+            }
+            QCheckBox::indicator:checked {
+                background:  rgba(169, 169, 169, 0.9);
+            }</string>
+       </property>
+       <property name="text">
+        <string>StickerSpam</string>
+       </property>
+      </widget>
+      <widget class="QCheckBox" name="checkBoxGS_GhostPing">
+       <property name="geometry">
+        <rect>
+         <x>310</x>
+         <y>30</y>
+         <width>91</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QCheckBox {
+                background: transparent;
+                padding: 3px;
+				color: #FFF;
+            }
+            QCheckBox::indicator {
+                border: 2px solid  rgba(169, 169, 169, 0.9);
+                width: 15px;
+                height: 15px;
+                border-radius: 7px;
+            }
+            QCheckBox::indicator:checked {
+                background:  rgba(169, 169, 169, 0.9);
+            }</string>
+       </property>
+       <property name="text">
+        <string>GhostPingV2</string>
+       </property>
+      </widget>
+      <widget class="QCheckBox" name="checkBoxGS_HidePing">
+       <property name="geometry">
+        <rect>
+         <x>340</x>
+         <y>50</y>
+         <width>81</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QCheckBox {
+                background: transparent;
+                padding: 3px;
+				color: #FFF;
+            }
+            QCheckBox::indicator {
+                border: 2px solid  rgba(169, 169, 169, 0.9);
+                width: 15px;
+                height: 15px;
+                border-radius: 7px;
+            }
+            QCheckBox::indicator:checked {
+                background:  rgba(169, 169, 169, 0.9);
+            }</string>
+       </property>
+       <property name="text">
+        <string>HidePing</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="labelGS_KeyWords">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>0</y>
+         <width>261</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Leelawadee UI Semilight</family>
+         <pointsize>8</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel {
+    background: none;
+    color: #FFF; /* Transparent font color */
+}</string>
+       </property>
+       <property name="text">
+        <string>keywords: [num],[random],[mtag],[poon]</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QFrame" name="frameMS_6">
+      <property name="geometry">
+       <rect>
+        <x>450</x>
+        <y>240</y>
+        <width>251</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QFrame {
+    background-color: #28004F; /* Use an even darker shade of purple */
+    border-radius: 10px;
+}</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <widget class="QSlider" name="horizontalSliderGS_Delay">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>30</y>
+         <width>211</width>
+         <height>22</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QSlider::groove:horizontal {
+    background: #FFFFFF; /* White line */
+    border: none; /* No border */
+    height: 8px; /* Adjust the height as needed */
+    border-radius: 4px; /* Rounded corners with a 4px radius */
+}
+
+QSlider::handle:horizontal {
+    background: rgba(169, 169, 169, 0.9); /* Slider marker color #8677C3 */
+    width: 20px; /* Adjust the width as needed */
+    border: none; /* No border */
+    border-radius: 4px; /* Rounded corners with a 4px radius */
+}</string>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+      <widget class="QLabel" name="labelGS_Delay">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>10</y>
+         <width>31</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Leelawadee UI Semilight</family>
+         <pointsize>8</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel {
+    background: none;
+    color: #FFF; /* Transparent font color */
+}</string>
+       </property>
+       <property name="text">
+        <string>delay</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="labelGS_DelayCount">
+       <property name="geometry">
+        <rect>
+         <x>200</x>
+         <y>10</y>
+         <width>31</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Leelawadee UI Semilight</family>
+         <pointsize>8</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel {
+    background: none;
+    color: #FFF; /* Transparent font color */
+}</string>
+       </property>
+       <property name="text">
+        <string>0.0s</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QFrame" name="frameMS_7">
+      <property name="geometry">
+       <rect>
+        <x>610</x>
+        <y>130</y>
+        <width>131</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QFrame {
+    background-color: #28004F; /* Use an even darker shade of purple */
+    border-radius: 10px;
+}</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <widget class="QLabel" name="labelGS_SentMessageCount">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>10</y>
+         <width>61</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Leelawadee UI Semilight</family>
+         <pointsize>8</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel {
+    background: none;
+    color: #FFF; /* Transparent font color */
+}</string>
+       </property>
+       <property name="text">
+        <string>sent: 0</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="labelGS_FailedMessageCount">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>30</y>
+         <width>61</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Leelawadee UI Semilight</family>
+         <pointsize>8</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel {
+    background: none;
+    color: #FFF; /* Transparent font color */
+}</string>
+       </property>
+       <property name="text">
+        <string>failed: 0</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="labelGS_RatePerSecondCount">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>50</y>
+         <width>61</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Leelawadee UI Semilight</family>
+         <pointsize>8</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel {
+    background: none;
+    color: #FFF; /* Transparent font color */
+}</string>
+       </property>
+       <property name="text">
+        <string>rate: 0/s</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QFrame" name="frameMS_8">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>0</y>
+        <width>431</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QFrame {
+    background-color: #28004F; /* Use an even darker shade of purple */
+    border-radius: 10px;
+}</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <widget class="QLineEdit" name="lineEditGS_ChannelId">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>0</y>
+         <width>131</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLineEdit {
+    border: none;            /* No border */
+    background: transparent; /* Transparent background */
+    color: #FFF;          /* White text color */
+    border-bottom: 1px solid rgba(169, 169, 169, 0.9); /* Underline effect */
+}
+</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButtonGS_StartSpam">
+       <property name="geometry">
+        <rect>
+         <x>150</x>
+         <y>10</y>
+         <width>131</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    background: rgba(169, 169, 169, 0.2); /* Slightly transparent background */
+    padding: 5px 10px;
+    color: #FFFFFF; /* White text color */
+    font-size: 12pt; /* Font size */
+}
+
+QPushButton:hover {
+    background: rgba(169, 169, 169, 0.3); /* Light purple background on hover */
+    color: #FFFFFF; /* White text color on hover */
+}
+</string>
+       </property>
+       <property name="text">
+        <string>Spam</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEditGS_GuildId">
+       <property name="geometry">
+        <rect>
+         <x>290</x>
+         <y>0</y>
+         <width>131</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLineEdit {
+    border: none;            /* No border */
+    background: transparent; /* Transparent background */
+    color: #FFF;          /* White text color */
+    border-bottom: 1px solid rgba(169, 169, 169, 0.9); /* Underline effect */
+}
+</string>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="pageDmSpammer">
+     <widget class="QFrame" name="frameDS">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>70</y>
+        <width>441</width>
+        <height>151</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QFrame {
+    background-color: #28004F; /* Use an even darker shade of purple */
+    border-radius: 10px;
+}</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <widget class="QTextEdit" name="textEditDS_SpamMessage">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>10</y>
+         <width>421</width>
+         <height>101</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QTextEdit {
+    background: transparent; /* Transparent background */
+    border: 2px solid rgba(169, 169, 169, 0.9); /* Border color &quot;#8677C3&quot; */
+    border-radius: 4px; /* Rounded corners with a 10px radius */
+    color: white;
+}</string>
+       </property>
+      </widget>
+      <widget class="QCheckBox" name="checkBoxDS_AutoDelete">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>120</y>
+         <width>91</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QCheckBox {
+                background: transparent;
+                padding: 3px;
+				color: #FFF;
+            }
+            QCheckBox::indicator {
+                border: 2px solid  rgba(169, 169, 169, 0.9);
+                width: 15px;
+                height: 15px;
+                border-radius: 7px;
+            }
+            QCheckBox::indicator:checked {
+                background:  rgba(169, 169, 169, 0.9);
+            }</string>
+       </property>
+       <property name="text">
+        <string>AutoDelete</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QFrame" name="frameDS_2">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>10</y>
+        <width>441</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QFrame {
+    background-color: #28004F; /* Use an even darker shade of purple */
+    border-radius: 10px;
+}</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <widget class="QPushButton" name="pushButtonDS_StartFriend">
+       <property name="geometry">
+        <rect>
+         <x>310</x>
+         <y>10</y>
+         <width>121</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    background: rgba(169, 169, 169, 0.2); /* Slightly transparent background */
+    padding: 5px 10px;
+    color: #FFFFFF; /* White text color */
+    font-size: 12pt; /* Font size */
+}
+
+QPushButton:hover {
+    background: rgba(169, 169, 169, 0.3); /* Light purple background on hover */
+    color: #FFFFFF; /* White text color on hover */
+}
+</string>
+       </property>
+       <property name="text">
+        <string>Friend</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEditDS_UserId">
+       <property name="geometry">
+        <rect>
+         <x>140</x>
+         <y>10</y>
+         <width>161</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLineEdit {
+    border: none;            /* No border */
+    background: transparent; /* Transparent background */
+    color: #FFF;          /* White text color */
+    border-bottom: 1px solid rgba(169, 169, 169, 0.9); /* Underline effect */
+}
+</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButtonDS_StartSpam">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>10</y>
+         <width>121</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    background: rgba(169, 169, 169, 0.2); /* Slightly transparent background */
+    padding: 5px 10px;
+    color: #FFFFFF; /* White text color */
+    font-size: 12pt; /* Font size */
+}
+
+QPushButton:hover {
+    background: rgba(169, 169, 169, 0.3); /* Light purple background on hover */
+    color: #FFFFFF; /* White text color on hover */
+}
+</string>
+       </property>
+       <property name="text">
+        <string>Spam</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QFrame" name="frameDS_3">
+      <property name="geometry">
+       <rect>
+        <x>240</x>
+        <y>230</y>
+        <width>251</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QFrame {
+    background-color: #28004F; /* Use an even darker shade of purple */
+    border-radius: 10px;
+}</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <widget class="QSlider" name="horizontalSliderDS_DelaySlider">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>30</y>
+         <width>211</width>
+         <height>22</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QSlider::groove:horizontal {
+    background: #FFFFFF; /* White line */
+    border: none; /* No border */
+    height: 8px; /* Adjust the height as needed */
+    border-radius: 4px; /* Rounded corners with a 4px radius */
+}
+
+QSlider::handle:horizontal {
+    background: rgba(169, 169, 169, 0.9); /* Slider marker color #8677C3 */
+    width: 20px; /* Adjust the width as needed */
+    border: none; /* No border */
+    border-radius: 4px; /* Rounded corners with a 4px radius */
+}</string>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+      <widget class="QLabel" name="labelDS_Delay">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>10</y>
+         <width>31</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Leelawadee UI Semilight</family>
+         <pointsize>8</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel {
+    background: none;
+    color: #FFF; /* Transparent font color */
+}</string>
+       </property>
+       <property name="text">
+        <string>delay</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="labelDS_DelayCount">
+       <property name="geometry">
+        <rect>
+         <x>200</x>
+         <y>10</y>
+         <width>31</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Leelawadee UI Semilight</family>
+         <pointsize>8</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel {
+    background: none;
+    color: #FFF; /* Transparent font color */
+}</string>
+       </property>
+       <property name="text">
+        <string>0.0s</string>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="pageGuildManager">
+     <widget class="QFrame" name="frameGM_2">
+      <property name="geometry">
+       <rect>
+        <x>590</x>
+        <y>20</y>
+        <width>121</width>
+        <height>151</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QFrame {
+    background-color: #28004F; /* Use an even darker shade of purple */
+    border-radius: 10px;
+}</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <widget class="QLabel" name="labelGM_Joined">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>20</y>
+         <width>61</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Leelawadee UI Semilight</family>
+         <pointsize>8</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel {
+    background: none;
+    color: #FFF; /* Transparent font color */
+}</string>
+       </property>
+       <property name="text">
+        <string>joined: 0</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="labelGM_JoinedLogo">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>20</y>
+         <width>16</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Leelawadee UI Semilight</family>
+         <pointsize>8</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel {
+    background: none;
+    color: #FFF; /* Transparent font color */
+}</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap>assets/user-check.svg</pixmap>
+       </property>
+       <property name="scaledContents">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLabel" name="labelGM_Solving">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>50</y>
+         <width>61</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Leelawadee UI Semilight</family>
+         <pointsize>8</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel {
+    background: none;
+    color: #FFF; /* Transparent font color */
+}</string>
+       </property>
+       <property name="text">
+        <string>solving: 0</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="labelGM_SolvingLogo">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>50</y>
+         <width>16</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Leelawadee UI Semilight</family>
+         <pointsize>8</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel {
+    background: none;
+    color: #FFF; /* Transparent font color */
+}</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap>assets/dollar-sign.svg</pixmap>
+       </property>
+       <property name="scaledContents">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLabel" name="labelGM_Failed">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>80</y>
+         <width>61</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Leelawadee UI Semilight</family>
+         <pointsize>8</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel {
+    background: none;
+    color: #FFF; /* Transparent font color */
+}</string>
+       </property>
+       <property name="text">
+        <string>failed: 0</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="labelGM_FailedLogo">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>80</y>
+         <width>16</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Leelawadee UI Semilight</family>
+         <pointsize>8</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel {
+    background: none;
+    color: #FFF; /* Transparent font color */
+}</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap>assets/alert-octagon.svg</pixmap>
+       </property>
+       <property name="scaledContents">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButtonGM_StartCheckGuild">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>110</y>
+         <width>101</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    background: rgba(169, 169, 169, 0.2); /* Slightly transparent background */
+    padding: 5px 10px;
+    color: #FFFFFF; /* White text color */
+    font-size: 12pt; /* Font size */
+}
+
+QPushButton:hover {
+    background: rgba(169, 169, 169, 0.3); /* Light purple background on hover */
+    color: #FFFFFF; /* White text color on hover */
+}
+</string>
+       </property>
+       <property name="text">
+        <string>Check Guild</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QFrame" name="frameGM">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>20</y>
+        <width>541</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QFrame {
+    background-color: #28004F; /* Use an even darker shade of purple */
+    border-radius: 10px;
+}</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <widget class="QPushButton" name="pushButtonGM_StartJoin">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>10</y>
+         <width>101</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    background: rgba(169, 169, 169, 0.2); /* Slightly transparent background */
+    padding: 5px 10px;
+    color: #FFFFFF; /* White text color */
+    font-size: 12pt; /* Font size */
+}
+
+QPushButton:hover {
+    background: rgba(169, 169, 169, 0.3); /* Light purple background on hover */
+    color: #FFFFFF; /* White text color on hover */
+}
+</string>
+       </property>
+       <property name="text">
+        <string>Join</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButtonGM_StartLeave">
+       <property name="geometry">
+        <rect>
+         <x>120</x>
+         <y>10</y>
+         <width>101</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    background: rgba(169, 169, 169, 0.2); /* Slightly transparent background */
+    padding: 5px 10px;
+    color: #FFFFFF; /* White text color */
+    font-size: 12pt; /* Font size */
+}
+
+QPushButton:hover {
+    background: rgba(169, 169, 169, 0.3); /* Light purple background on hover */
+    color: #FFFFFF; /* White text color on hover */
+}
+</string>
+       </property>
+       <property name="text">
+        <string>Leave</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEditGM_Invite">
+       <property name="geometry">
+        <rect>
+         <x>230</x>
+         <y>10</y>
+         <width>161</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLineEdit {
+    border: none;            /* No border */
+    background: transparent; /* Transparent background */
+    color: #FFF;          /* White text color */
+    border-bottom: 1px solid rgba(169, 169, 169, 0.9); /* Underline effect */
+}
+</string>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="comboBoxGM_VerificationBypass">
+       <property name="geometry">
+        <rect>
+         <x>400</x>
+         <y>20</y>
+         <width>121</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QComboBox {
+    background-color: #28282B; /* Dark matte black background color */
+    color: #ffffff;           /* White text color */
+    border-radius: 4px;      /* Rounded corners with a 10px radius */
+    padding: 3px;             /* Add some padding for visual spacing */
+}</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QFrame" name="frameGM_3">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>100</y>
+        <width>461</width>
+        <height>131</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QFrame {
+    background-color: #28004F; /* Use an even darker shade of purple */
+    border-radius: 10px;
+}</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <widget class="QStackedWidget" name="stackedWidgetGM_BypassMenu">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>10</y>
+         <width>441</width>
+         <height>81</height>
+        </rect>
+       </property>
+       <property name="currentIndex">
+        <number>0</number>
+       </property>
+       <widget class="QWidget" name="pageGM_RctBypass">
+        <property name="styleSheet">
+         <string notr="true">QWidget {
+    background: transparent; /* Transparent background */
+    border: 2px solid   rgba(169, 169, 169, 0.9); /* Border color &quot;#8677C3&quot; */
+    border-radius: 4px; /* Rounded corners with a 10px radius */
+}</string>
+        </property>
+        <widget class="QLineEdit" name="lineEditGMRB_ChannelId">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>20</y>
+           <width>91</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLineEdit {
+    border: none;            /* No border */
+    background: transparent; /* Transparent background */
+    color: #FFF;          /* White text color */
+    border-bottom: 1px solid rgba(169, 169, 169, 0.9); /* Underline effect */
+}
+</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="lineEditGMRB_MessageId">
+         <property name="geometry">
+          <rect>
+           <x>120</x>
+           <y>20</y>
+           <width>91</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLineEdit {
+    border: none;            /* No border */
+    background: transparent; /* Transparent background */
+    color: #FFF;          /* White text color */
+    border-bottom: 1px solid rgba(169, 169, 169, 0.9); /* Underline effect */
+}
+</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="lineEditGMRB_Emoji">
+         <property name="geometry">
+          <rect>
+           <x>220</x>
+           <y>20</y>
+           <width>91</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLineEdit {
+    border: none;            /* No border */
+    background: transparent; /* Transparent background */
+    color: #FFF;          /* White text color */
+    border-bottom: 1px solid rgba(169, 169, 169, 0.9); /* Underline effect */
+}
+</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pushButton_GM_StartRctBypass">
+         <property name="geometry">
+          <rect>
+           <x>320</x>
+           <y>20</y>
+           <width>101</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    background: rgba(169, 169, 169, 0.2); /* Slightly transparent background */
+    padding: 5px 10px;
+    color: #FFFFFF; /* White text color */
+    font-size: 12pt; /* Font size */
+}
+
+QPushButton:hover {
+    background: rgba(169, 169, 169, 0.3); /* Light purple background on hover */
+    color: #FFFFFF; /* White text color on hover */
+}
+</string>
+         </property>
+         <property name="text">
+          <string>Execute</string>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="pageGM_MsgBypass">
+        <property name="styleSheet">
+         <string notr="true">QWidget {
+    background: transparent; /* Transparent background */
+    border: 2px solid   rgba(169, 169, 169, 0.9); /* Border color &quot;#8677C3&quot; */
+    border-radius: 4px; /* Rounded corners with a 10px radius */
+}</string>
+        </property>
+        <widget class="QLineEdit" name="lineEditGMMB_GuildId">
+         <property name="geometry">
+          <rect>
+           <x>30</x>
+           <y>20</y>
+           <width>121</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLineEdit {
+    border: none;            /* No border */
+    background: transparent; /* Transparent background */
+    color: #FFF;          /* White text color */
+    border-bottom: 1px solid rgba(169, 169, 169, 0.9); /* Underline effect */
+}
+</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="lineEditGMMB_SpamMessage">
+         <property name="geometry">
+          <rect>
+           <x>160</x>
+           <y>20</y>
+           <width>121</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLineEdit {
+    border: none;            /* No border */
+    background: transparent; /* Transparent background */
+    color: #FFF;          /* White text color */
+    border-bottom: 1px solid rgba(169, 169, 169, 0.9); /* Underline effect */
+}
+</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pushButtonGM_StartMsgBypass">
+         <property name="geometry">
+          <rect>
+           <x>290</x>
+           <y>20</y>
+           <width>101</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    background: rgba(169, 169, 169, 0.2); /* Slightly transparent background */
+    padding: 5px 10px;
+    color: #FFFFFF; /* White text color */
+    font-size: 12pt; /* Font size */
+}
+
+QPushButton:hover {
+    background: rgba(169, 169, 169, 0.3); /* Light purple background on hover */
+    color: #FFFFFF; /* White text color on hover */
+}
+</string>
+         </property>
+         <property name="text">
+          <string>Execute</string>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="pageGM_BtnBypass">
+        <property name="styleSheet">
+         <string notr="true">QWidget {
+    background: transparent; /* Transparent background */
+    border: 2px solid   rgba(169, 169, 169, 0.9); /* Border color &quot;#8677C3&quot; */
+    border-radius: 4px; /* Rounded corners with a 10px radius */
+}</string>
+        </property>
+        <widget class="QLineEdit" name="lineEditGMBB_GuildId">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>20</y>
+           <width>91</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLineEdit {
+    border: none;            /* No border */
+    background: transparent; /* Transparent background */
+    color: #FFF;          /* White text color */
+    border-bottom: 1px solid rgba(169, 169, 169, 0.9); /* Underline effect */
+}
+</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="lineEditGMBB_ChannelId">
+         <property name="geometry">
+          <rect>
+           <x>120</x>
+           <y>20</y>
+           <width>91</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLineEdit {
+    border: none;            /* No border */
+    background: transparent; /* Transparent background */
+    color: #FFF;          /* White text color */
+    border-bottom: 1px solid rgba(169, 169, 169, 0.9); /* Underline effect */
+}
+</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="lineEditGMBB_MessageId">
+         <property name="geometry">
+          <rect>
+           <x>220</x>
+           <y>20</y>
+           <width>91</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLineEdit {
+    border: none;            /* No border */
+    background: transparent; /* Transparent background */
+    color: #FFF;          /* White text color */
+    border-bottom: 1px solid rgba(169, 169, 169, 0.9); /* Underline effect */
+}
+</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pushButtonGM_StartBtnBypass">
+         <property name="geometry">
+          <rect>
+           <x>320</x>
+           <y>20</y>
+           <width>101</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    background: rgba(169, 169, 169, 0.2); /* Slightly transparent background */
+    padding: 5px 10px;
+    color: #FFFFFF; /* White text color */
+    font-size: 12pt; /* Font size */
+}
+
+QPushButton:hover {
+    background: rgba(169, 169, 169, 0.3); /* Light purple background on hover */
+    color: #FFFFFF; /* White text color on hover */
+}
+</string>
+         </property>
+         <property name="text">
+          <string>Execute</string>
+         </property>
+        </widget>
+       </widget>
+      </widget>
+      <widget class="QPushButton" name="pushButtonGM_RctBypass">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>90</y>
+         <width>101</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    background: rgba(169, 169, 169, 0.2); /* Slightly transparent background */
+    padding: 5px 10px;
+    color: #FFFFFF; /* White text color */
+    font-size: 12pt; /* Font size */
+}
+
+QPushButton:hover {
+    background: rgba(169, 169, 169, 0.3); /* Light purple background on hover */
+    color: #FFFFFF; /* White text color on hover */
+}
+</string>
+       </property>
+       <property name="text">
+        <string>RctBypass</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButtonGM_MsgBypass">
+       <property name="geometry">
+        <rect>
+         <x>110</x>
+         <y>90</y>
+         <width>101</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    background: rgba(169, 169, 169, 0.2); /* Slightly transparent background */
+    padding: 5px 10px;
+    color: #FFFFFF; /* White text color */
+    font-size: 12pt; /* Font size */
+}
+
+QPushButton:hover {
+    background: rgba(169, 169, 169, 0.3); /* Light purple background on hover */
+    color: #FFFFFF; /* White text color on hover */
+}
+</string>
+       </property>
+       <property name="text">
+        <string>MsgBypass</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButtonGM_BtnBypass">
+       <property name="geometry">
+        <rect>
+         <x>210</x>
+         <y>90</y>
+         <width>101</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    background: rgba(169, 169, 169, 0.2); /* Slightly transparent background */
+    padding: 5px 10px;
+    color: #FFFFFF; /* White text color */
+    font-size: 12pt; /* Font size */
+}
+
+QPushButton:hover {
+    background: rgba(169, 169, 169, 0.3); /* Light purple background on hover */
+    color: #FFFFFF; /* White text color on hover */
+}
+</string>
+       </property>
+       <property name="text">
+        <string>BtnBypass</string>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="pageVoiceSpammer">
+     <widget class="QFrame" name="frameVS_2">
+      <property name="geometry">
+       <rect>
+        <x>390</x>
+        <y>30</y>
+        <width>161</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QFrame {
+    background-color: #28004F; /* Use an even darker shade of purple */
+    border-radius: 10px;
+}</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <widget class="QLineEdit" name="lineEditVS_GuildId">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>10</y>
+         <width>121</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLineEdit {
+    border: none;            /* No border */
+    background: transparent; /* Transparent background */
+    color: #FFF;          /* White text color */
+    border-bottom: 1px solid rgba(169, 169, 169, 0.9); /* Underline effect */
+}
+</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QFrame" name="frameVS">
+      <property name="geometry">
+       <rect>
+        <x>200</x>
+        <y>30</y>
+        <width>161</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QFrame {
+    background-color: #28004F; /* Use an even darker shade of purple */
+    border-radius: 10px;
+}</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <widget class="QLineEdit" name="lineEditVS_ChannelId">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>10</y>
+         <width>121</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLineEdit {
+    border: none;            /* No border */
+    background: transparent; /* Transparent background */
+    color: #FFF;          /* White text color */
+    border-bottom: 1px solid rgba(169, 169, 169, 0.9); /* Underline effect */
+}
+</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QFrame" name="frameVS_3">
+      <property name="geometry">
+       <rect>
+        <x>220</x>
+        <y>100</y>
+        <width>151</width>
+        <height>151</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QFrame {
+    background-color: #28004F; /* Use an even darker shade of purple */
+    border-radius: 10px;
+}</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <widget class="QPushButton" name="pushButtonVS_StartJoin">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>20</y>
+         <width>111</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    background: rgba(169, 169, 169, 0.2); /* Slightly transparent background */
+    padding: 5px 10px;
+    color: #FFFFFF; /* White text color */
+    font-size: 12pt; /* Font size */
+}
+
+QPushButton:hover {
+    background: rgba(169, 169, 169, 0.3); /* Light purple background on hover */
+    color: #FFFFFF; /* White text color on hover */
+}
+</string>
+       </property>
+       <property name="text">
+        <string>Join</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButtonVS_StartLeave">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>60</y>
+         <width>111</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    background: rgba(169, 169, 169, 0.2); /* Slightly transparent background */
+    padding: 5px 10px;
+    color: #FFFFFF; /* White text color */
+    font-size: 12pt; /* Font size */
+}
+
+QPushButton:hover {
+    background: rgba(169, 169, 169, 0.3); /* Light purple background on hover */
+    color: #FFFFFF; /* White text color on hover */
+}
+</string>
+       </property>
+       <property name="text">
+        <string>Leave</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButtonVS_StartSpam">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>100</y>
+         <width>111</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    background: rgba(169, 169, 169, 0.2); /* Slightly transparent background */
+    padding: 5px 10px;
+    color: #FFFFFF; /* White text color */
+    font-size: 12pt; /* Font size */
+}
+
+QPushButton:hover {
+    background: rgba(169, 169, 169, 0.3); /* Light purple background on hover */
+    color: #FFFFFF; /* White text color on hover */
+}
+</string>
+       </property>
+       <property name="text">
+        <string>Spam</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QFrame" name="frameVS_4">
+      <property name="geometry">
+       <rect>
+        <x>380</x>
+        <y>100</y>
+        <width>151</width>
+        <height>151</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QFrame {
+    background-color: #28004F; /* Use an even darker shade of purple */
+    border-radius: 10px;
+}</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <widget class="QCheckBox" name="checkBoxVS_Mute">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>20</y>
+         <width>81</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QCheckBox {
+                background: transparent;
+                padding: 3px;
+				color: #FFF;
+            }
+            QCheckBox::indicator {
+                border: 2px solid  rgba(169, 169, 169, 0.9);
+                width: 15px;
+                height: 15px;
+                border-radius: 7px;
+            }
+            QCheckBox::indicator:checked {
+                background:  rgba(169, 169, 169, 0.9);
+            }</string>
+       </property>
+       <property name="text">
+        <string>Mute</string>
+       </property>
+      </widget>
+      <widget class="QCheckBox" name="checkBoxVS_Deafen">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>50</y>
+         <width>81</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QCheckBox {
+                background: transparent;
+                padding: 3px;
+				color: #FFF;
+            }
+            QCheckBox::indicator {
+                border: 2px solid  rgba(169, 169, 169, 0.9);
+                width: 15px;
+                height: 15px;
+                border-radius: 7px;
+            }
+            QCheckBox::indicator:checked {
+                background:  rgba(169, 169, 169, 0.9);
+            }</string>
+       </property>
+       <property name="text">
+        <string>Deafen</string>
+       </property>
+      </widget>
+      <widget class="QCheckBox" name="checkBoxVS_Video">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>80</y>
+         <width>81</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QCheckBox {
+                background: transparent;
+                padding: 3px;
+				color: #FFF;
+            }
+            QCheckBox::indicator {
+                border: 2px solid  rgba(169, 169, 169, 0.9);
+                width: 15px;
+                height: 15px;
+                border-radius: 7px;
+            }
+            QCheckBox::indicator:checked {
+                background:  rgba(169, 169, 169, 0.9);
+            }</string>
+       </property>
+       <property name="text">
+        <string>Video</string>
+       </property>
+      </widget>
+      <widget class="QCheckBox" name="checkBoxVS_Stream">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>110</y>
+         <width>81</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QCheckBox {
+                background: transparent;
+                padding: 3px;
+				color: #FFF;
+            }
+            QCheckBox::indicator {
+                border: 2px solid  rgba(169, 169, 169, 0.9);
+                width: 15px;
+                height: 15px;
+                border-radius: 7px;
+            }
+            QCheckBox::indicator:checked {
+                background:  rgba(169, 169, 169, 0.9);
+            }</string>
+       </property>
+       <property name="text">
+        <string>Stream</string>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="pageHookSpammer">
+     <widget class="QFrame" name="frameHS">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>30</y>
+        <width>441</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QFrame {
+    background-color: #28004F; /* Use an even darker shade of purple */
+    border-radius: 10px;
+}</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <widget class="QLineEdit" name="lineEditHS_Webhook">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>10</y>
+         <width>401</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLineEdit {
+    border: none;            /* No border */
+    background: transparent; /* Transparent background */
+    color: #FFF;          /* White text color */
+    border-bottom: 1px solid rgba(169, 169, 169, 0.9); /* Underline effect */
+}
+</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QFrame" name="frameHS_3">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>90</y>
+        <width>441</width>
+        <height>121</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QFrame {
+    background-color: #28004F; /* Use an even darker shade of purple */
+    border-radius: 10px;
+}</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <widget class="QTextEdit" name="textEditHS_SpamMessage">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>10</y>
+         <width>421</width>
+         <height>101</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QTextEdit {
+    background: transparent; /* Transparent background */
+    border: 2px solid rgba(169, 169, 169, 0.9); /* Border color &quot;#8677C3&quot; */
+    border-radius: 4px; /* Rounded corners with a 10px radius */
+    color: white;
+}</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QFrame" name="frameHS_2">
+      <property name="geometry">
+       <rect>
+        <x>250</x>
+        <y>220</y>
+        <width>261</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QFrame {
+    background-color: #28004F; /* Use an even darker shade of purple */
+    border-radius: 10px;
+}</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <widget class="QPushButton" name="pushButtonHS_StartDelete">
+       <property name="geometry">
+        <rect>
+         <x>140</x>
+         <y>10</y>
+         <width>111</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    background: rgba(169, 169, 169, 0.2); /* Slightly transparent background */
+    padding: 5px 10px;
+    color: #FFFFFF; /* White text color */
+    font-size: 12pt; /* Font size */
+}
+
+QPushButton:hover {
+    background: rgba(169, 169, 169, 0.3); /* Light purple background on hover */
+    color: #FFFFFF; /* White text color on hover */
+}
+</string>
+       </property>
+       <property name="text">
+        <string>Delete</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButtonHS_StartSpam">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>10</y>
+         <width>111</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    background: rgba(169, 169, 169, 0.2); /* Slightly transparent background */
+    padding: 5px 10px;
+    color: #FFFFFF; /* White text color */
+    font-size: 12pt; /* Font size */
+}
+
+QPushButton:hover {
+    background: rgba(169, 169, 169, 0.3); /* Light purple background on hover */
+    color: #FFFFFF; /* White text color on hover */
+}
+</string>
+       </property>
+       <property name="text">
+        <string>Spam</string>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="pageSettings">
+     <widget class="QFrame" name="frameSE">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>20</y>
+        <width>141</width>
+        <height>241</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QFrame {
+    background-color: #28004F; /* Use an even darker shade of purple */
+    border-radius: 10px;
+}</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <widget class="QCheckBox" name="checkBoxSE_Null">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>20</y>
+         <width>51</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QCheckBox {
+                background: transparent;
+                padding: 3px;
+				color: #FFF;
+            }
+            QCheckBox::indicator {
+                border: 2px solid  rgba(169, 169, 169, 0.9);
+                width: 15px;
+                height: 15px;
+                border-radius: 7px;
+            }
+            QCheckBox::indicator:checked {
+                background:  rgba(169, 169, 169, 0.9);
+            }</string>
+       </property>
+       <property name="text">
+        <string>Null</string>
+       </property>
+      </widget>
+      <widget class="QCheckBox" name="checkBoxSE_Null_2">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>50</y>
+         <width>51</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QCheckBox {
+                background: transparent;
+                padding: 3px;
+				color: #FFF;
+            }
+            QCheckBox::indicator {
+                border: 2px solid  rgba(169, 169, 169, 0.9);
+                width: 15px;
+                height: 15px;
+                border-radius: 7px;
+            }
+            QCheckBox::indicator:checked {
+                background:  rgba(169, 169, 169, 0.9);
+            }</string>
+       </property>
+       <property name="text">
+        <string>Null</string>
+       </property>
+      </widget>
+      <widget class="QCheckBox" name="checkBoxSE_Null_3">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>80</y>
+         <width>51</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QCheckBox {
+                background: transparent;
+                padding: 3px;
+				color: #FFF;
+            }
+            QCheckBox::indicator {
+                border: 2px solid  rgba(169, 169, 169, 0.9);
+                width: 15px;
+                height: 15px;
+                border-radius: 7px;
+            }
+            QCheckBox::indicator:checked {
+                background:  rgba(169, 169, 169, 0.9);
+            }</string>
+       </property>
+       <property name="text">
+        <string>Null</string>
+       </property>
+      </widget>
+      <widget class="QCheckBox" name="checkBoxSE_Null_4">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>110</y>
+         <width>51</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QCheckBox {
+                background: transparent;
+                padding: 3px;
+				color: #FFF;
+            }
+            QCheckBox::indicator {
+                border: 2px solid  rgba(169, 169, 169, 0.9);
+                width: 15px;
+                height: 15px;
+                border-radius: 7px;
+            }
+            QCheckBox::indicator:checked {
+                background:  rgba(169, 169, 169, 0.9);
+            }</string>
+       </property>
+       <property name="text">
+        <string>Null</string>
+       </property>
+      </widget>
+      <widget class="QCheckBox" name="checkBoxSE_Null_5">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>140</y>
+         <width>51</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QCheckBox {
+                background: transparent;
+                padding: 3px;
+				color: #FFF;
+            }
+            QCheckBox::indicator {
+                border: 2px solid  rgba(169, 169, 169, 0.9);
+                width: 15px;
+                height: 15px;
+                border-radius: 7px;
+            }
+            QCheckBox::indicator:checked {
+                background:  rgba(169, 169, 169, 0.9);
+            }</string>
+       </property>
+       <property name="text">
+        <string>Null</string>
+       </property>
+      </widget>
+      <widget class="QCheckBox" name="checkBoxSE_Null_6">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>170</y>
+         <width>51</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QCheckBox {
+                background: transparent;
+                padding: 3px;
+				color: #FFF;
+            }
+            QCheckBox::indicator {
+                border: 2px solid  rgba(169, 169, 169, 0.9);
+                width: 15px;
+                height: 15px;
+                border-radius: 7px;
+            }
+            QCheckBox::indicator:checked {
+                background:  rgba(169, 169, 169, 0.9);
+            }</string>
+       </property>
+       <property name="text">
+        <string>Null</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButtonSE_StartClearConsole">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>200</y>
+         <width>121</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    background: rgba(169, 169, 169, 0.2); /* Slightly transparent background */
+    padding: 5px 10px;
+    color: #FFFFFF; /* White text color */
+    font-size: 12pt; /* Font size */
+}
+
+QPushButton:hover {
+    background: rgba(169, 169, 169, 0.3); /* Light purple background on hover */
+    color: #FFFFFF; /* White text color on hover */
+}
+</string>
+       </property>
+       <property name="text">
+        <string>Clear Console</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QFrame" name="frameSE_2">
+      <property name="geometry">
+       <rect>
+        <x>220</x>
+        <y>20</y>
+        <width>341</width>
+        <height>241</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QFrame {
+    background-color: #28004F; /* Use an even darker shade of purple */
+    border-radius: 10px;
+}</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <widget class="QLabel" name="labelSE_SetDisplay">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>30</y>
+         <width>61</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Leelawadee UI Semilight</family>
+         <pointsize>8</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel {
+    background: none;
+    color: #FFF; /* Transparent font color */
+}</string>
+       </property>
+       <property name="text">
+        <string>set display:</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="labelSE_SetPronouns">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>70</y>
+         <width>71</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Leelawadee UI Semilight</family>
+         <pointsize>8</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel {
+    background: none;
+    color: #FFF; /* Transparent font color */
+}</string>
+       </property>
+       <property name="text">
+        <string>set pronouns:</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="labelSE_SetBio">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>110</y>
+         <width>61</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Leelawadee UI Semilight</family>
+         <pointsize>8</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel {
+    background: none;
+    color: #FFF; /* Transparent font color */
+}</string>
+       </property>
+       <property name="text">
+        <string>set bio:</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="labelSE_SetPfp">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>160</y>
+         <width>61</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Leelawadee UI Semilight</family>
+         <pointsize>8</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel {
+    background: none;
+    color: #FFF; /* Transparent font color */
+}</string>
+       </property>
+       <property name="text">
+        <string>set pfp:</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEditSE_DisplayName">
+       <property name="geometry">
+        <rect>
+         <x>100</x>
+         <y>20</y>
+         <width>81</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLineEdit {
+    border: none;            /* No border */
+    background: transparent; /* Transparent background */
+    color: #FFF;          /* White text color */
+    border-bottom: 1px solid rgba(169, 169, 169, 0.9); /* Underline effect */
+}
+</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEditSE_PronounName">
+       <property name="geometry">
+        <rect>
+         <x>100</x>
+         <y>60</y>
+         <width>81</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLineEdit {
+    border: none;            /* No border */
+    background: transparent; /* Transparent background */
+    color: #FFF;          /* White text color */
+    border-bottom: 1px solid rgba(169, 169, 169, 0.9); /* Underline effect */
+}
+</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEditSE_BioMessage">
+       <property name="geometry">
+        <rect>
+         <x>100</x>
+         <y>100</y>
+         <width>81</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLineEdit {
+    border: none;            /* No border */
+    background: transparent; /* Transparent background */
+    color: #FFF;          /* White text color */
+    border-bottom: 1px solid rgba(169, 169, 169, 0.9); /* Underline effect */
+}
+</string>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="comboBoxSE_PfpName">
+       <property name="geometry">
+        <rect>
+         <x>100</x>
+         <y>160</y>
+         <width>81</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QComboBox {
+    background-color:  #2C2C2C; /* Dark matte black background color */
+    color: #ffffff;           /* White text color */
+    border-radius: 4px;      /* Rounded corners with a 10px radius */
+    padding: 3px;             /* Add some padding for visual spacing */
+}</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButtonSE_StartSetDisplay">
+       <property name="geometry">
+        <rect>
+         <x>190</x>
+         <y>30</y>
+         <width>61</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    background: rgba(169, 169, 169, 0.2); /* Slightly transparent background */
+    padding: 5px 10px;
+    color: #FFFFFF; /* White text color */
+    font-size: 12pt; /* Font size */
+}
+
+QPushButton:hover {
+    background: rgba(169, 169, 169, 0.3); /* Light purple background on hover */
+    color: #FFFFFF; /* White text color on hover */
+}
+</string>
+       </property>
+       <property name="text">
+        <string>Set</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButtonSE_StartUnSetDisplay">
+       <property name="geometry">
+        <rect>
+         <x>260</x>
+         <y>30</y>
+         <width>71</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    background: rgba(169, 169, 169, 0.2); /* Slightly transparent background */
+    padding: 5px 10px;
+    color: #FFFFFF; /* White text color */
+    font-size: 12pt; /* Font size */
+}
+
+QPushButton:hover {
+    background: rgba(169, 169, 169, 0.3); /* Light purple background on hover */
+    color: #FFFFFF; /* White text color on hover */
+}
+</string>
+       </property>
+       <property name="text">
+        <string>UnSet</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButtonSE_StartSetPronouns">
+       <property name="geometry">
+        <rect>
+         <x>190</x>
+         <y>70</y>
+         <width>61</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    background: rgba(169, 169, 169, 0.2); /* Slightly transparent background */
+    padding: 5px 10px;
+    color: #FFFFFF; /* White text color */
+    font-size: 12pt; /* Font size */
+}
+
+QPushButton:hover {
+    background: rgba(169, 169, 169, 0.3); /* Light purple background on hover */
+    color: #FFFFFF; /* White text color on hover */
+}
+</string>
+       </property>
+       <property name="text">
+        <string>Set</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButtonSE_StartSetBio">
+       <property name="geometry">
+        <rect>
+         <x>190</x>
+         <y>110</y>
+         <width>61</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    background: rgba(169, 169, 169, 0.2); /* Slightly transparent background */
+    padding: 5px 10px;
+    color: #FFFFFF; /* White text color */
+    font-size: 12pt; /* Font size */
+}
+
+QPushButton:hover {
+    background: rgba(169, 169, 169, 0.3); /* Light purple background on hover */
+    color: #FFFFFF; /* White text color on hover */
+}
+</string>
+       </property>
+       <property name="text">
+        <string>Set</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButtonSE_StartUnSetPronouns">
+       <property name="geometry">
+        <rect>
+         <x>260</x>
+         <y>70</y>
+         <width>71</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    background: rgba(169, 169, 169, 0.2); /* Slightly transparent background */
+    padding: 5px 10px;
+    color: #FFFFFF; /* White text color */
+    font-size: 12pt; /* Font size */
+}
+
+QPushButton:hover {
+    background: rgba(169, 169, 169, 0.3); /* Light purple background on hover */
+    color: #FFFFFF; /* White text color on hover */
+}
+</string>
+       </property>
+       <property name="text">
+        <string>UnSet</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButtonSE_StartUnSetBio">
+       <property name="geometry">
+        <rect>
+         <x>260</x>
+         <y>110</y>
+         <width>71</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    background: rgba(169, 169, 169, 0.2); /* Slightly transparent background */
+    padding: 5px 10px;
+    color: #FFFFFF; /* White text color */
+    font-size: 12pt; /* Font size */
+}
+
+QPushButton:hover {
+    background: rgba(169, 169, 169, 0.3); /* Light purple background on hover */
+    color: #FFFFFF; /* White text color on hover */
+}
+</string>
+       </property>
+       <property name="text">
+        <string>UnSet</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButtonSE_StartSetPfp">
+       <property name="geometry">
+        <rect>
+         <x>190</x>
+         <y>150</y>
+         <width>61</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    background: rgba(169, 169, 169, 0.2); /* Slightly transparent background */
+    padding: 5px 10px;
+    color: #FFFFFF; /* White text color */
+    font-size: 12pt; /* Font size */
+}
+
+QPushButton:hover {
+    background: rgba(169, 169, 169, 0.3); /* Light purple background on hover */
+    color: #FFFFFF; /* White text color on hover */
+}
+</string>
+       </property>
+       <property name="text">
+        <string>Set</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButtonSE_StartUnSetPfp">
+       <property name="geometry">
+        <rect>
+         <x>260</x>
+         <y>150</y>
+         <width>71</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    background: rgba(169, 169, 169, 0.2); /* Slightly transparent background */
+    padding: 5px 10px;
+    color: #FFFFFF; /* White text color */
+    font-size: 12pt; /* Font size */
+}
+
+QPushButton:hover {
+    background: rgba(169, 169, 169, 0.3); /* Light purple background on hover */
+    color: #FFFFFF; /* White text color on hover */
+}
+</string>
+       </property>
+       <property name="text">
+        <string>UnSet</string>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QPushButton" name="pushButtonNAV_StartMinimize">
+    <property name="geometry">
+     <rect>
+      <x>730</x>
+      <y>20</y>
+      <width>21</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background: none; /* Very transparent light grey background */
+    color: #FFFFFF; /* White text color */
+    border: none; /* No border */
+    border-radius: 6px;
+px; /* Rounded corners with a 10px radius */
+}
+
+QPushButton:hover {
+    background: rgba(200, 200, 200, 0.1); /* Gradient from magenta to light purple, left to right */
+}
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>assets/minimize-2.svg</normaloff>assets/minimize-2.svg</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>15</width>
+      <height>15</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButtonNAV_StartClose">
+    <property name="geometry">
+     <rect>
+      <x>750</x>
+      <y>20</y>
+      <width>21</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background: none; /* Very transparent light grey background */
+    color: #FFFFFF; /* White text color */
+    border: none; /* No border */
+    border-radius: 6px;
+px; /* Rounded corners with a 10px radius */
+}
+
+QPushButton:hover {
+    background: rgba(200, 200, 200, 0.1); /* Gradient from magenta to light purple, left to right */
+}
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>assets/x.svg</normaloff>assets/x.svg</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>15</width>
+      <height>15</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QFrame" name="frameGM_4">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>10</y>
+      <width>71</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QFrame {
+    background-color: rgba(169, 169, 169, 0.3); /* Use an even darker shade of purple */
+    border-radius: 10px;
+}</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QLabel" name="labelH_ToolLogo">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>51</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel {
+    background: none;
+    color: #FFF; /* Transparent font color */
+    border-radius: 10px; /* Adjust the radius as needed */
+}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap>assets/go6icon.ico</pixmap>
+     </property>
+     <property name="scaledContents">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,6 @@
+update rdp
+update on github **
+
+python -m nuitka --standalone --onefile --follow-imports --windows-icon-from-ico=assets/go6icon.ico --enable-plugin=pyqt5 --output-dir=dist --output-filename=go6.exe main.py
+
+ 

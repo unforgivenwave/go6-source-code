@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>711</width>
+    <height>334</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QMainWindow {
+    background: qlineargradient(spread: pad, x1: 0, y1: 0, x2: 0, y2: 1, stop: 0.1 #4B0082, stop: 0.9 #000000);
+}
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <widget class="QFrame" name="frameH_4">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>90</y>
+      <width>671</width>
+      <height>341</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QFrame {
+    background-color: #28004F; /* Use an even darker shade of purple */
+    border-radius: 10px;
+}</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QLabel" name="label_Go6LicenseKey">
+     <property name="geometry">
+      <rect>
+       <x>230</x>
+       <y>30</y>
+       <width>211</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Microsoft Tai Le</family>
+       <pointsize>21</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel {
+    background: none;
+    color: #FFF; /* Transparent font color */
+    border-radius: 10px; /* Adjust the radius as needed */
+}</string>
+     </property>
+     <property name="text">
+      <string>Go6 License Key</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_KeyInput">
+     <property name="geometry">
+      <rect>
+       <x>200</x>
+       <y>90</y>
+       <width>281</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLineEdit {
+    border: none;
+    background-color: #e0e0e0; /* Set your desired background color */
+    color: #FFF;
+    padding: 10px; /* Increase padding for better spacing */
+    border-radius: 10px 10px 0 0; /* Set top corners to be curved */
+    text-align: center; /* Center the text */
+    font-size: 14px; /* Set your desired font size */
+}
+
+QLineEdit:focus {
+    border-bottom: 1px solid rgba(169, 169, 169, 0.9);
+    /* Add underline effect when the line edit is in focus */
+}
+</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="labelH_PleaseMessage">
+     <property name="geometry">
+      <rect>
+       <x>250</x>
+       <y>50</y>
+       <width>161</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>9</pointsize>
+       <weight>50</weight>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel {
+    background: none;
+    color: #FFF; /* Transparent font color */
+    border-radius: 10px; /* Adjust the radius as needed */
+}</string>
+     </property>
+     <property name="text">
+      <string>Please input your Go6 license </string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButtonConfirm">
+     <property name="geometry">
+      <rect>
+       <x>300</x>
+       <y>150</y>
+       <width>71</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background:rgba(169, 169, 169, 0.2); /* Very transparent light grey background */
+    color: #FFFFFF; /* White text color */
+    border: none; /* No border */
+    border-radius: 6px;
+px; /* Rounded corners with a 10px radius */
+}
+
+QPushButton:hover {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:0, stop:0 #FF00FF, stop:1 #9f8bd7); /* Gradient from magenta to light purple, left to right */
+}
+</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>assets/check-circle.svg</normaloff>assets/check-circle.svg</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>24</width>
+       <height>24</height>
+      </size>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QLabel" name="label_ToolLogo">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>20</y>
+      <width>51</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+    background: none;
+    color: #FFF; /* Transparent font color */
+    border-radius: 10px; /* Adjust the radius as needed */
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>assets/go6icon.ico</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
